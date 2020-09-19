@@ -246,7 +246,7 @@ footer{
   height: auto;
 }
 
-#footer-text{
+#footer-inner #footer-text{
   padding:20px 0 15px 0!important;
 }
 
