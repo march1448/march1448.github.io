@@ -1,0 +1,293 @@
+
+@media screen and (max-width: 480px) {
+  body{
+    min-width: 480px!important;
+  }
+
+  .inner{
+    width:100%!important;
+    margin:0 auto;
+  }
+
+  .inner-wid{
+    width:100%!important;
+    margin: 0 auto;
+  }
+
+  header a{
+    display: none;
+  }
+
+  #header-bottom{
+  display: none;
+}
+
+/* ハンバーガーメニュー */
+.drawer{
+  position: absolute;
+  top:0;
+  right:10;
+}
+
+/* チェックボックスは非表示に */
+.drawer-hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer-open {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;/* 重なり順を一番上に */
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 25px;
+  border-radius: 3px;
+  background: #f2f4e6;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線のうち一番上の棒の位置調整 */
+.drawer-open span:before {
+  bottom: 8px;
+}
+
+/* 三本線のうち一番下の棒の位置調整 */
+.drawer-open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer-check:checked ~ .drawer-open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer-check:checked ~ .drawer-open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer-check:checked ~ .drawer-open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* メニューのデザイン*/
+.drawer-content {
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  right:-100%;
+  z-index: 99;
+  background: url("main_menu_img.jpg");
+  transition: .5s;
+  text-align: center;
+  padding-top:40px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-check:checked ~ .drawer-content {
+  right: 0;
+}
+
+.drawer-item a{
+  display: block;
+  padding:10px;
+  font-size: 1.8rem;
+  color:#f2f4e6;
+  transition: .3s ease;
+}
+
+.drawer-item a:hover{
+  text-shadow:
+   1px  1px 2px #fff,
+  -1px -1px 2px #fff;
+}
+
+#drawer-img{
+  position: absolute;
+  right: -10;
+  bottom:15;
+}
+
+#drawer-img img{
+  width: 70%;
+  height: auto;
+}
+
+#contact_form a{
+  text-decoration: underline;
+  margin-top:10px;
+}
+
+/* メインの画像*/
+      #header-img{
+      width: 100%!important;
+      height: 290px;
+      background-size: cover;
+    }
+
+    /* メイン画像上に記載の文章*/
+    #header-top h2{
+      writing-mode:horizontal-tb;
+      top:305;
+      right:15;
+      font-size: 2.6rem!important;
+      opacity: .9;
+    }
+
+    #header-top span{
+      font-size: 2.0rem!important;
+      opacity: .9;
+    }
+
+/* 白い背景画像*/
+#container-background{
+  width: 100%;
+  min-width: 480px!important;
+  background-size:101% 101%!important;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px!important;
+  padding-bottom:20px!important;
+}
+
+/* 背景の華の画像*/
+#left-img{
+  display: none;
+}
+
+#right-img{
+  display: none;
+}
+
+/* 新着情報、ご挨拶*/
+#main{
+  width:100%!important;
+  padding:0 15px;
+}
+
+/* 新着情報のタイトル*/
+#latest{
+  padding-bottom: 30px!important;
+}
+
+  #latest img,#main-text img{
+  width: 110px;
+  height: auto;
+  top:-10px!important;
+  }
+
+  /*新着情報の記事*/
+   #latest_article li{
+     display: block!important;
+     border-bottom:1px solid #333;
+     margin-bottom: 8px;
+   }
+
+   /*ご挨拶の文章*/
+   #text{
+     word-wrap: break-word;
+   }
+
+/*サイドメニュー*/
+#side{
+  display: block;
+  width:100%!important;
+  padding-top: 30px;
+}
+
+#side ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#side li{
+  margin-bottom:3px;
+}
+
+/* 白い背景画像の背面の黒ハッチング*/
+#container-inner::before{
+  display: none!important;
+}
+
+footer{
+  position: relative;
+  padding:0 15px;
+}
+
+#footer-img{
+  position: absolute;
+  bottom:10;
+  left: 10;
+}
+#footer-img img{
+  width: 60%;
+  height: auto;
+}
+
+
+/* フッター背景の黒ハッチング*/
+#footer-inner::before{
+  display: none!important;
+}
+
+#footer-menu ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding:30px 0 0!important;
+}
+
+#footer-menu li{
+  width: 50%;
+  text-align: center;
+  z-index: 0!important;
+}
+
+#footer-menu a{
+  display: block;
+  padding: 5px 0!important;
+  font-size:1.6rem!important;
+}
+
+
+}
+
+@media screen and (min-width: 481px) {
+  body{
+    min-width: 960px!important;
+  }
+  .drawer {
+    display: none;
+  }
+
+  #footer-img{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .drawer {
+    display: none;
+  }
+  #footer-img{
+    display: none;
+  }
+}
