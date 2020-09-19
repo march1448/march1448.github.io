@@ -1,234 +1,468 @@
-<DOCTYPE html>
-<html>
-<head>
-     <meta charset="utf-8">
-     <title>能楽者</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="stylesheet2.min.css">
-     <link rel="stylesheet" href="responsive2.css">
-     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "小塚明朝 Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "sans-serif";
+  letter-spacing: 0.1em;
+  font-size: 62.5%;
+}
 
-<body>
+li{
+  list-style: none;
+}
 
-<!-- ヘッダー -->
-  <header>
-    <div id="header_inside" class="inner">
-     <h1>能楽舎　河村晴久 オフィシャルサイト</h1>
-     <div id="contact-form">
-      <a href="#">お問い合わせ</a>
-     </div>
-    </div>
+a{
+  text-decoration:none;
+}
 
-    <!-- ハンバーガーメニュー部分 -->
-    <div class="drawer">
+/*サイト全体の背景画像*/
+body{
+  width: 100%;
+  min-width:1400px;
+  height:auto;
+  background-image: url("whole_img.jpg");
+}
 
-      <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-      <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+.inner{
+  width:875px;
+  margin:0 auto;
+}
 
-      <!-- ハンバーガーアイコン -->
-      <label for="drawer-check" class="drawer-open"><span></span></label>
-
-      <!-- メニュー -->
-      <nav class="drawer-content">
-        <ul class="drawer-list">
-          <li class="drawer-item">
-            <a href="#">プロフィール</a>
-          </li><!-- /.drawer-item -->
-          <li class="drawer-item">
-            <a href="#">演能案内</a>
-          </li><!-- /.drawer-item -->
-          <li class="drawer-item">
-            <a href="#">活動歴</a>
-          </li><!-- /.drawer-item -->
-          <li class="drawer-item">
-            <a href="#">お稽古案内</a>
-          </li><!-- /.drawer-item -->
-          <li class="drawer-item">
-            <a href="#">リンク集</a>
-          </li><!-- /.drawer-item -->
-          <li class="drawer-item">
-            <a href="#">フォトライブラリー</a>
-          </li><!-- /.drawer-item -->
-          <li class="drawer-item" id="contact_form">
-            <a href="#">お問い合わせ</a>
-          </li><!-- /.drawer-item -->
-        </ul><!-- /.drawer-list -->
-        <div id="drawer-img">
-          <img src="flower_right.png">
-        </div>
-      </nav>
-    </div>
-
-  </header>
-
-  <!-- メイン画像 -->
-  <div id="header-top">
-    <div class="inner-wid">
-      <div id="header-img">
-        <h2><span>能楽舎</span><br>
-       河村&thinsp;晴久</h2>
-     </div>
-   </div>
- </div>
-
- <!-- メインメニュー -->
-  <div id="header-bottom">
-    <div id="header-inner" class="inner-wid">
-      <ul class="inner">
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">プロフィール</a></li>
-        <li><a href="#">演能案内</a></li>
-        <li><a href="#">活動歴</a></li>
-        <li><a href="#">お稽古案内</a></li>
-        <li><a href="#">リンク集</a></li>
-        <li><a href="#">フォトライブラリー</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 新着情報、ご挨拶、サイドメニュー -->
-  <div id="container">
-
-    <!-- 背景の華 -->
-    <div id="left-img">
-      <img src="flower_left.png">
-    </div>
-    <div id="right-img">
-      <img src="flower_right.png">
-    </div>
-
-    <div id="container-inner" class="inner-wid">
-      <div id="container-background" class="inner">
-
-        <div id="main">
-          <!-- 新着情報 -->
-          <div id="latest">
-            <div class="title">
-              <h3>新着情報</h3>
-              <img src="title_logo.png">
-            </div>
-            <div id="latest_article">
-              <ul>
-                <li>
-                  <time>2011.06.23</time>
-                  <p><a href="#">公園案内を更新しました</a></p>
-                </li>
-                <li>
-                  <time>2011.06.23</time>
-                  <p><a href="#">7月講演チケットの販売受付を開始しました</a></p>
-                </li>
-                <li>
-                  <time>2010.04.25</time>
-                  <p><a href="#">「能へのいざない」のご案内</a></p>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- ご挨拶 -->
-          <div id="main-text">
-            <div class="title">
-              <h3>ご挨拶</h3>
-              <img src="title_logo.png">
-            </div>
-            <p id="text">ご挨拶のテキスト文章が入ります。<br>
-              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
-              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
-              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
-              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
-              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
-              □□□□□□□□□□□□□□□□□□□□□□□□</p>
-            </div>
-          </div>
-
-          <!-- サイドメニュー -->
-          <div id="side">
-            <ul>
-
-              <!-- サイドメニュー1 -->
-              <li>
-                <a href="#">
-                  <img src="side_img1.jpg" class="img-size1">
-                  <img src="ring.png" class="ring">
-                  <p id="side_menu_tit1" class="side-text">河村晴久<br>
-                    プロフィール</p>
-                  </a>
-                </li>
-
-                <!-- サイドメニュー2 -->
-                <li class="side_menu"><a href="#">
-                  <div class="img_hide">
-                    <img src="side-img2.jpg" class="img-size" width="190px" height="80px">
-                  </div>
-                  <img src="ring.png" class="ring">
-                  <p id="side_menu_tit2" class="side-text"><span>河村晴久の</span>ブログ</p>
-                </a></li>
-
-                <!-- サイドメニュー3 -->
-                <li class="side_menu"><a href="#">
-                  <div class="img_hide">
-                    <img src="side_img3.jpg" class="img-size" width="190px" height="80px">
-                  </div>
-                  <img src="ring.png" class="ring">
-                  <p id="side_menu_tit3" class="side-text">能へのいざない</p>
-                </a></li>
-
-                <!-- サイドメニュー4 -->
-                <li class="side_menu"><a href="#">
-                  <div class="img_hide">
-                    <img src="side_img4.jpg" class="img-size" width="190px" height="80px">
-                  </div>
-                  <img src="ring.png" class="ring">
-                  <p id="side_menu_tit4" class="side-text">読みもの</p>
-                </a></li>
-
-                <!-- サイドメニュー5 -->
-                <li class="side_menu"><a href="#">
-                  <div class="img_hide">
-                    <img src="side_img5.jpg" class="img-size" width="190px" height="80px">
-                  </div>
-                  <img src="ring.png" class="ring">
-                  <p id="side_menu_tit5" class="side-text">能舞台逍遥</p>
-                </a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- フッター -->
-      <footer>
-
-        <div id="footer-img">
-          <img src="flower_left.png" >
-        </div>
-
-        <div id="footer-inner"class="inner-wid">
-          <div id="footer-menu" class="inner">
-            <!-- フッターメニュー -->
-            <ul>
-              <li><a href="#">TOP</a></li>
-              <li><a href="#">プロフィール</a></li>
-              <li><a href="#">演能案内</a></li>
-              <li><a href="#">活動歴</a></li>
-              <li><a href="#">お稽古案内</a></li>
-              <li><a href="#">リンク集</a></li>
-              <li><a href="#">フォトライブラリー</a></li>
-            </ul>
-          </div>
-
-          <!-- フッターのテキスト -->
-          <div id="footer-text" class="inner">
-            <p>能楽舎　河村晴久　オフィシャルサイト</p>
-            <p>6603-8151　京都市北区小山下総町11-16</p>
-            <p>TEL/FAX　075-432-4875</p>
-            <p class="copy">Copyright (C) 2011 KAWAMURA HARUHISA. All Right Reserved.</p>
-            <p class="copy">ホームページ内の画像等の著作権は林定期能に帰属します。無断での転載、複写、二次使用は固くお断りいたします。</p>
-          </div>
-        </div>
-      </footer>
+.inner-wid{
+  width:950px;
+  margin: 0 auto;
+}
 
 
-    </body>
-    </html>
+/*ヘッダー*/
+header{
+  width:100%;
+  height: 50px;
+  position: relative;
+  position: fixed;
+  top:0;
+  z-index: 2;
+
+  #header_inside{
+    height: inherit;
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+/*ヘッダーロゴ*/
+    h1{
+      padding-left: 15px;
+      font-size: 1.2rem;
+      font-feature-settings: "palt" 1;
+      font-weight: normal;
+      color:#f8f3f3;
+    }
+
+/*ヘッダー お問い合わせ*/
+    a{
+      text-decoration: transparent;
+      padding-right: 16px;
+      font-size: 1.2rem;
+      font-feature-settings: "palt" 1;
+      font-weight: normal;
+      color:#f1f0f0;
+      transition: .3s ease;
+
+      &:hover{
+        text-decoration-color: #f1f0f0;
+        text-decoration-line: underline;
+      }
+    }
+ }
+}
+
+/* ヘッダーの背景画像 */
+header::before{
+  display: block;
+  width: 100%;
+  height: 50px;
+  content: " ";
+  position: absolute;
+  background: url("header_img.jpg");
+  background-position: top center;
+  background-attachment: fixed;
+  opacity: .6;
+  z-index: -1;
+}
+
+/* メインの画像*/
+#header-top{
+    #header-img{
+      position: relative;
+      height: 390px;
+      background: url("レイヤー 15.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+    /* メイン画像上に記載の文章*/
+    h2{
+      line-height: 1.2em;
+      font-size:3.0rem;
+      position:absolute;
+      top:110px;
+      right:90px;
+      -webkit-writing-mode:vertical-rl;
+      -ms-writing-mode:tb-rl;
+      writing-mode:vertical-rl;
+      text-orientation:upright;
+      text-align: left;
+      color:#f1f0f0;
+      text-shadow:-1px 1px 2px #333;
+
+    span{
+      font-size:2.4rem;
+      font-feature-settings: "palt" 1;
+      color:#f1f0f0;
+    }
+  }
+}
+
+/* メインメニュー*/
+  #header-bottom{
+    margin-top:-60px;
+
+    #header-inner{
+    ul{
+      height:60px;
+      display: flex;
+      justify-content: center;
+
+      li{
+        margin:0 auto;
+        text-align: center;
+        z-index: 5;
+
+        /* メインメニューの文字*/
+        a{
+          display: block;
+          padding:16px;
+          font-size: 1.4rem;
+          color:#f2f4e6;
+          transition: .3s ease;
+
+          &:hover{
+            text-shadow:
+             1px  1px 2px #fff,
+            -1px -1px 2px #fff;
+          }
+        }
+      }
+    }
+
+    /* メインメニューの背景画像*/
+    ul::before{
+      display: block;
+      width: 950px;
+      height: 60px;
+      content: " ";
+      position: absolute;
+      background: url("main_menu_img.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-attachment: fixed;
+      opacity: .7;
+      z-index: 4;
+    }
+  }
+}
+
+/* 新着情報、ご挨拶、サイドメニュー*/
+#container{
+  position:relative;
+
+
+/* 背景の華＿左側*/
+  #left-img{
+    position: absolute;
+    top:14%;
+    left:6%;
+  }
+
+/* 背景の華＿右側*/
+  #right-img{
+    position:absolute;
+    right:9.5%;
+    bottom:-33%;
+  }
+
+  #container-inner{
+
+  /* 白い背景画像*/
+  #container-background{
+    position: relative;
+    background: url("container_img.jpg")no-repeat center center;
+    background-position: center;
+    display: flex;
+    padding-top:50px;
+    padding-bottom:40px;
+
+    /* 新着情報、ご挨拶*/
+    #main{
+      width:73.15%;
+
+      /* 新着情報のタイトル*/
+      #latest{
+        display: flex;
+        padding-bottom: 60px;
+
+        .title{
+          position:relative;
+          width:26.56%;
+
+          h3{
+          font-size: 1.8rem;
+          text-align: right;
+          padding-right: 15px;
+          position:relative;
+        }
+        img{
+          position:absolute;
+          top:-15;
+          right: 15;
+        }
+       }
+
+       /*新着情報の記事*/
+        #latest_article{
+          width:73.43%;
+          padding:5px 0 0 10px;
+
+          li{
+            list-style: none;
+            display: flex;
+
+            /*新着情報の投稿日*/
+            time{
+              padding-right:30px;
+              font-size:1.4rem;
+              color:#030303;
+            }
+
+            /*新着情報の記事名*/
+            a{
+              text-decoration: transparent;
+              font-size:1.4rem;
+              color:#030303;
+              transition: .4s ease;
+
+              &:hover{
+                text-decoration-color: #030303;
+                text-decoration-line: underline;
+              }
+            }
+          }
+        }
+      }
+
+      /*ご挨拶のタイトル*/
+      #main-text{
+        display: flex;
+
+        .title{
+          position:relative;
+          width:26.56%;
+
+          h3{
+            font-size: 1.8rem;
+            text-align: right;
+            padding-right: 33px;
+            position:relative;
+          }
+
+          img{
+            position:absolute;
+            top:-15;
+            right: 15;
+          }
+        }
+
+        /*ご挨拶の文章*/
+        #text{
+          width:73.43%;
+          padding-left: 10px;
+          font-size:1.4rem;
+          color:#030303;
+        }
+      }
+    }
+
+    /*サイドメニュー*/
+    #side{
+      width:26.85%;
+
+      li{
+        position:relative;
+
+        a{
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+
+        .ring{
+          position: absolute;
+          top:-20;
+          left:-30;
+        }
+
+        /*サイドメニューのフォント*/
+        .side-text{
+          font-family: "小塚明朝 Pr6N";
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: #3e3d33;
+          line-height: 1.3em;
+          letter-spacing: normal;
+          text-shadow:
+           2px  2px 5px #fff,
+           2px  -2px 5px #fff,
+           -2px  2px 5px #fff,
+          -2px -2px 5px #fff;
+        }
+
+        /*サイドメニューの1つ目*/
+        #side_menu_tit1{
+          position: absolute;
+          top:20;
+          left:23;
+          font-size: 1.4rem;
+        }
+      }
+
+      /*サイドメニューの２つ目～*/
+      .side_menu{
+        padding-bottom: 5px;
+
+        .img_hide{
+          width:185px;
+          height:70px;
+          overflow: hidden;
+        }
+
+        /*サイドメニューの２つ目*/
+        #side_menu_tit2{
+          position: absolute;
+          top:25px;
+          left: 23px;
+
+         span{
+           font-size: 1.4rem;
+         }
+       }
+     }
+
+     /*サイドメニューの3つ目*/
+     #side_menu_tit3{
+       position: absolute;
+       top:25px;
+       left: 23px;
+     }
+     /*サイドメニューの4つ目*/
+     #side_menu_tit4{
+       position: absolute;
+       top:25px;
+       left: 45px;
+       letter-spacing: 0.3em;
+     }
+
+     /*サイドメニューの5つ目*/
+     #side_menu_tit5{
+       position: absolute;
+       top:25px;
+       left: 33px;
+       letter-spacing: 0.3em;
+     }
+    }
+  }
+}
+
+/* 白い背景画像の背面の黒ハッチング*/
+#container-inner::before{
+   display: block;
+   width: 950px;
+   height: 467px;
+   content: " ";
+   position: absolute;
+   background: url("main_menu_img.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-attachment: fixed;
+   opacity: .8;
+   z-index: -1;
+ }
+}
+
+/* フッターの背景画像*/
+footer{
+  width: 100%;
+  background-image: url("foot.jpg");
+
+
+/* フッターメニュー*/
+  #footer-inner{
+
+    #footer-menu{
+      ul{
+        display: flex;
+        padding:10px 80px 0 20px;
+        li{
+          list-style:none;
+          z-index:1;
+          margin:0 auto;
+
+          /* フッターメニューのフォント*/
+          a{
+            text-decoration: transparent;
+            color: #e7e4ce;
+            font-size: 1.2rem;
+            transition: .4s ease;
+
+            &:hover{
+              text-decoration-color: #e7e4ce;
+              text-decoration-line: underline;
+            }
+          }
+        }
+      }
+    }
+
+  /* フッターのフォント*/
+  #footer-text{
+    position: relative;
+    padding:20px 0 15px 45px;
+
+    p{
+      font-size:1.2rem;
+      color: #e7e4ce;
+      line-height: 1.7em;
+      font-weight: 200;
+    }
+
+    /* フッター コピーライトのフォント*/
+    .copy{
+     font-size:1.0rem;
+   }
+ }
+}
+}
+
+/* フッター背景の黒ハッチング*/
+#footer-inner::before{
+  display: block;
+  width: 950px;
+  height: 160px;
+  content: " ";
+  position: absolute;
+  background-color: rgba(0 ,0 ,0, .2);
+  background-size: cover;
+  background-position: top center;
+}
