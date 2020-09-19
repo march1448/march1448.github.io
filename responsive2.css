@@ -22,10 +22,14 @@
   display: none;
 }
 
+header h1{
+  font-size:1.8rem!important;
+}
+
 /* ハンバーガーメニュー */
 .drawer{
   position: absolute;
-  top:0;
+  top:1;
   right:10;
 }
 
@@ -52,8 +56,8 @@
 .drawer-open span:after {
   content: '';
   display: block;
-  height: 2px;
-  width: 25px;
+  height: 3px;
+  width: 30px;
   border-radius: 3px;
   background: #f2f4e6;
   transition: 0.5s;
@@ -62,12 +66,12 @@
 
 /* 三本線のうち一番上の棒の位置調整 */
 .drawer-open span:before {
-  bottom: 8px;
+  bottom: 10px;
 }
 
 /* 三本線のうち一番下の棒の位置調整 */
 .drawer-open span:after {
-  top: 8px;
+  top: 10px;
 }
 
 /* アイコンがクリックされたら真ん中の線を透明にする */
@@ -107,16 +111,14 @@
 
 .drawer-item a{
   display: block;
-  padding:10px;
+  padding:15px;
   font-size: 1.8rem;
   color:#f2f4e6;
   transition: .3s ease;
 }
 
 .drawer-item a:hover{
-  text-shadow:
-   1px  1px 2px #fff,
-  -1px -1px 2px #fff;
+  text-decoration: underline;
 }
 
 #drawer-img{
@@ -131,7 +133,6 @@
 }
 
 #contact_form a{
-  text-decoration: underline;
   margin-top:10px;
 }
 
@@ -143,17 +144,19 @@
     }
 
     /* メイン画像上に記載の文章*/
+    #header-top{
+      opacity: .9;
+    }
+
     #header-top h2{
       writing-mode:horizontal-tb;
       top:305;
       right:15;
       font-size: 2.6rem!important;
-      opacity: .9;
     }
 
     #header-top span{
       font-size: 2.0rem!important;
-      opacity: .9;
     }
 
 /* 白い背景画像*/
@@ -163,8 +166,7 @@
   background-size:101% 101%!important;
   display: flex;
   flex-direction: column;
-  padding-top: 30px!important;
-  padding-bottom:20px!important;
+  padding: 30px 15px!important;
 }
 
 /* 背景の華の画像*/
@@ -179,7 +181,6 @@
 /* 新着情報、ご挨拶*/
 #main{
   width:100%!important;
-  padding:0 15px;
 }
 
 /* 新着情報のタイトル*/
@@ -197,7 +198,13 @@
    #latest_article li{
      display: block!important;
      border-bottom:1px solid #333;
+     padding-bottom: 5px;
      margin-bottom: 8px;
+   }
+
+   #latest_article a:hover{
+     opacity: .8;
+     text-decoration: none!important;
    }
 
    /*ご挨拶の文章*/
@@ -217,9 +224,7 @@
   flex-direction: column;
   align-items: center;
 }
-#side li{
-  margin-bottom:3px;
-}
+
 
 /* 白い背景画像の背面の黒ハッチング*/
 #container-inner::before{
