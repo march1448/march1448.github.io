@@ -163,7 +163,7 @@ header h1{
 #container-background{
   width: 100%;
   min-width: 480px!important;
-  background-size:101% 101%!important;
+  background-size:102% 102%!important;
   display: flex;
   flex-direction: column;
   padding: 30px 20px!important;
