@@ -166,7 +166,7 @@ header h1{
   background-size:101% 101%!important;
   display: flex;
   flex-direction: column;
-  padding: 30px 15px!important;
+  padding: 30px 20px!important;
 }
 
 /* 背景の華の画像*/
@@ -233,7 +233,7 @@ header h1{
 
 footer{
   position: relative;
-  padding:0 15px;
+  padding:0 30px;
 }
 
 #footer-img{
@@ -244,6 +244,10 @@ footer{
 #footer-img img{
   width: 60%;
   height: auto;
+}
+
+#footer-text{
+  padding:20px 0 15px 0!important;
 }
 
 
