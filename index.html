@@ -1,0 +1,237 @@
+<DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>能楽者</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="stylesheet2.min.css">
+     <link rel="stylesheet" href="responsive2.css">
+     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<body>
+
+<!-- ヘッダー -->
+  <header>
+    <div id="header_inside" class="inner">
+     <h1>能楽舎　河村晴久 オフィシャルサイト</h1>
+     <div id="contact-form">
+      <a href="#">お問い合わせ</a>
+     </div>
+    </div>
+
+    <!-- ハンバーガーメニュー部分 -->
+    <div class="drawer">
+
+      <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+      <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+
+      <!-- ハンバーガーアイコン -->
+      <label for="drawer-check" class="drawer-open"><span></span></label>
+
+      <!-- メニュー -->
+      <nav class="drawer-content">
+        <ul class="drawer-list">
+          <li class="drawer-item">
+            <a href="#">TOP</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="#">プロフィール</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="#">演能案内</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="#">活動歴</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="#">お稽古案内</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="#">リンク集</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="#">フォトライブラリー</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item" id="contact_form">
+            <a href="#">お問い合わせ</a>
+          </li><!-- /.drawer-item -->
+        </ul><!-- /.drawer-list -->
+        <div id="drawer-img">
+          <img src="flower_right.png">
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- メイン画像 -->
+  <div id="header-top">
+    <div class="inner-wid">
+      <div id="header-img">
+        <h2><span>能楽舎</span><br>
+       河村&thinsp;晴久</h2>
+     </div>
+   </div>
+ </div>
+
+ <!-- メインメニュー -->
+  <div id="header-bottom">
+    <div id="header-inner" class="inner-wid">
+      <ul class="inner">
+        <li><a href="#">TOP</a></li>
+        <li><a href="#">プロフィール</a></li>
+        <li><a href="#">演能案内</a></li>
+        <li><a href="#">活動歴</a></li>
+        <li><a href="#">お稽古案内</a></li>
+        <li><a href="#">リンク集</a></li>
+        <li><a href="#">フォトライブラリー</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 新着情報、ご挨拶、サイドメニュー -->
+  <div id="container">
+
+    <!-- 背景の華 -->
+    <div id="left-img">
+      <img src="flower_left.png">
+    </div>
+    <div id="right-img">
+      <img src="flower_right.png">
+    </div>
+
+    <div id="container-inner" class="inner-wid">
+      <div id="container-background" class="inner">
+
+        <div id="main">
+          <!-- 新着情報 -->
+          <div id="latest">
+            <div class="title">
+              <h3>新着情報</h3>
+              <img src="title_logo.png">
+            </div>
+            <div id="latest_article">
+              <ul>
+                <li>
+                  <time>2011.06.23</time>
+                  <p><a href="#">公園案内を更新しました</a></p>
+                </li>
+                <li>
+                  <time>2011.06.23</time>
+                  <p><a href="#">7月講演チケットの販売受付を開始しました</a></p>
+                </li>
+                <li>
+                  <time>2010.04.25</time>
+                  <p><a href="#">「能へのいざない」のご案内</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ご挨拶 -->
+          <div id="main-text">
+            <div class="title">
+              <h3>ご挨拶</h3>
+              <img src="title_logo.png">
+            </div>
+            <p id="text">ご挨拶のテキスト文章が入ります。<br>
+              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
+              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
+              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
+              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
+              □□□□□□□□□□□□□□□□□□□□□□□□□□□□<br>
+              □□□□□□□□□□□□□□□□□□□□□□□□</p>
+            </div>
+          </div>
+
+          <!-- サイドメニュー -->
+          <div id="side">
+            <ul>
+
+              <!-- サイドメニュー1 -->
+              <li>
+                <a href="#">
+                  <img src="side_img1.jpg" class="img-size1">
+                  <img src="ring.png" class="ring">
+                  <p id="side_menu_tit1" class="side-text">河村晴久<br>
+                    プロフィール</p>
+                  </a>
+                </li>
+
+                <!-- サイドメニュー2 -->
+                <li class="side_menu"><a href="#">
+                  <div class="img_hide">
+                    <img src="side-img2.jpg" class="img-size" width="190px" height="80px">
+                  </div>
+                  <img src="ring.png" class="ring">
+                  <p id="side_menu_tit2" class="side-text"><span>河村晴久の</span>ブログ</p>
+                </a></li>
+
+                <!-- サイドメニュー3 -->
+                <li class="side_menu"><a href="#">
+                  <div class="img_hide">
+                    <img src="side_img3.jpg" class="img-size" width="190px" height="80px">
+                  </div>
+                  <img src="ring.png" class="ring">
+                  <p id="side_menu_tit3" class="side-text">能へのいざない</p>
+                </a></li>
+
+                <!-- サイドメニュー4 -->
+                <li class="side_menu"><a href="#">
+                  <div class="img_hide">
+                    <img src="side_img4.jpg" class="img-size" width="190px" height="80px">
+                  </div>
+                  <img src="ring.png" class="ring">
+                  <p id="side_menu_tit4" class="side-text">読みもの</p>
+                </a></li>
+
+                <!-- サイドメニュー5 -->
+                <li class="side_menu"><a href="#">
+                  <div class="img_hide">
+                    <img src="side_img5.jpg" class="img-size" width="190px" height="80px">
+                  </div>
+                  <img src="ring.png" class="ring">
+                  <p id="side_menu_tit5" class="side-text">能舞台逍遥</p>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- フッター -->
+      <footer>
+
+        <div id="footer-img">
+          <img src="flower_left.png" >
+        </div>
+
+        <div id="footer-inner"class="inner-wid">
+          <div id="footer-menu" class="inner">
+            <!-- フッターメニュー -->
+            <ul>
+              <li><a href="#">TOP</a></li>
+              <li><a href="#">プロフィール</a></li>
+              <li><a href="#">演能案内</a></li>
+              <li><a href="#">活動歴</a></li>
+              <li><a href="#">お稽古案内</a></li>
+              <li><a href="#">リンク集</a></li>
+              <li><a href="#">フォトライブラリー</a></li>
+            </ul>
+          </div>
+
+          <!-- フッターのテキスト -->
+          <div id="footer-text" class="inner">
+            <p>能楽舎　河村晴久　オフィシャルサイト</p>
+            <p>6603-8151　京都市北区小山下総町11-16</p>
+            <p>TEL/FAX　075-432-4875</p>
+            <p class="copy">Copyright (C) 2011 KAWAMURA HARUHISA. All Right Reserved.</p>
+            <p class="copy">ホームページ内の画像等の著作権は林定期能に帰属します。無断での転載、複写、二次使用は固くお断りいたします。</p>
+          </div>
+        </div>
+      </footer>
+
+
+    </body>
+    </html>
