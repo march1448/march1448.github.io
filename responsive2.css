@@ -1,29 +1,24 @@
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   body{
-    min-width: 480px!important;
+    min-width: 360px!important;
+    width: 100%;
   }
 
-  .inner{
+  .inner,
+  .inner-wid{
     width:100%!important;
     margin:0 auto;
   }
 
-  .inner-wid{
-    width:100%!important;
-    margin: 0 auto;
-  }
-
-  header a{
+  header a,
+  #header-bottom{
     display: none;
   }
 
-  #header-bottom{
-  display: none;
-}
-
+/* ヘッダーのタイトル */
 header h1{
-  font-size:1.8rem!important;
+  font-size:1.4rem!important;
 }
 
 /* ハンバーガーメニュー */
@@ -98,7 +93,7 @@ header h1{
   top:0;
   right:-100%;
   z-index: 99;
-  background: url("main_menu_img.jpg");
+  background: url("main-menu-img.jpg");
   transition: .5s;
   text-align: center;
   padding-top:40px;
@@ -109,6 +104,7 @@ header h1{
   right: 0;
 }
 
+/* メニューのフォント*/
 .drawer-item a{
   display: block;
   padding:15px;
@@ -121,6 +117,7 @@ header h1{
   text-decoration: underline;
 }
 
+/* メニュー背景の花の画像*/
 #drawer-img{
   position: absolute;
   right: -10;
@@ -139,7 +136,6 @@ header h1{
 /* メインの画像*/
       #header-img{
       width: 100%!important;
-      height: 290px;
       background-size: cover;
     }
 
@@ -162,18 +158,16 @@ header h1{
 /* 白い背景画像*/
 #container-background{
   width: 100%;
-  min-width: 480px!important;
   background-size:102% 102%!important;
   display: flex;
   flex-direction: column;
-  padding: 30px 20px!important;
+  padding: 30px 15px!important;
 }
 
-/* 背景の華の画像*/
+/* 背景の花の画像*/
 #left-img{
   display: none;
 }
-
 #right-img{
   display: none;
 }
@@ -188,23 +182,36 @@ header h1{
   padding-bottom: 30px!important;
 }
 
+#latest .title h3{
+  font-size: 1.6rem!important;
+  text-align: right!important;
+  padding-right: 5!important;
+}
+
   #latest img,#main-text img{
   width: 110px;
   height: auto;
-  top:-10px!important;
+  top:-10!important;
+  right: 0!important;
   }
 
   /*新着情報の記事*/
-   #latest_article li{
+   #latest-article li{
      display: block!important;
      border-bottom:1px solid #333;
      padding-bottom: 5px;
      margin-bottom: 8px;
    }
 
-   #latest_article a:hover{
+   #latest-article a:hover{
      opacity: .8;
      text-decoration: none!important;
+   }
+
+   #main-text .title h3{
+     font-size: 1.6rem!important;
+     text-align: right!important;
+     padding-right: 25!important
    }
 
    /*ご挨拶の文章*/
@@ -236,6 +243,7 @@ footer{
   padding:0 30px;
 }
 
+/* フッター背景の花の画像*/
 #footer-img{
   position: absolute;
   bottom:10;
@@ -275,28 +283,73 @@ footer{
   padding: 5px 0!important;
   font-size:1.6rem!important;
 }
-
-
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 551px) {
+  @media screen and (max-width: 1024px){
+
   body{
-    min-width: 960px!important;
+    min-width: 551px;
+    width: 100%;
+    height: auto;
   }
-  .drawer {
+
+  .inner,
+  .inner-wid{
+    min-width: 0;
+    width:100%;
+    margin:0 auto;
+  }
+
+
+  #header-inner ul::before,
+  #footer-inner::before,
+  #container-inner::before{
+    width: 100%!important;
+
+  }
+
+  /*白い背景画像*/
+  #container-background{
+    width: 100%;
+    background-size:102% 102%!important;
+    padding: 30px 20px!important;
+  }
+
+  /*ご挨拶の文章*/
+  #text{
+    word-wrap: break-word;
+  }
+
+  /* 背景の花の画像*/
+  #left-img{
+    display: none;
+  }
+  #right-img{
     display: none;
   }
 
+  /* スマホ表示でのサイドメニュー*/
+  .drawer {
+    display: none;
+  }
+  /* スマホ表示での背景の花*/
   #footer-img{
     display: none;
   }
 }
+}
 
-@media screen and (min-width: 960px) {
+
+@media screen and (min-width: 1025px) {
+
+  /* スマホ表示でのサイドメニュー*/
   .drawer {
-    display: none;
+  display: none;
   }
+  /* スマホ表示での背景の花*/
   #footer-img{
-    display: none;
+  display: none;
   }
+
 }
