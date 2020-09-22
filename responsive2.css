@@ -200,14 +200,14 @@ header h1{
   /* アンドロイド用*/
 .Android #latest .title img{
   position:absolute;
-  top:-14;
-  right: 15;
+  top:-14!important;
+  right: 15!important;
 }
 
 .Android #main-text .title img{
   position:absolute;
-  top:-14;
-  right: 15;
+  top:-10!important;
+  right: 15!important;
 }
   
   /*新着情報の記事*/
