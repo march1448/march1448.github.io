@@ -195,6 +195,32 @@ header h1{
   top:-12!important;
   right: -5!important;
   }
+  
+  
+  /*アンドロイド*/
+  .android #latest{
+  display: flex;
+  padding-bottom: 60px;
+  }
+
+  .android #latest .title{
+    position:relative;
+    width:26.56%;
+  }
+
+   .android #latest .title h3{
+    font-size: 2.8rem;
+    text-align: right;
+    padding-right: 15px;
+    position:relative;
+  }
+  
+  .android #latest .title img{
+    position:absolute;
+    top:-15;
+    right: 15;
+  }
+
 
   /*新着情報の記事*/
    #latest-article{
