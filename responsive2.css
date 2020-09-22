@@ -212,10 +212,13 @@ header h1{
     padding-right: 15px;
     position:relative;
   }
-  .Android #latest .title img{
-    position:absolute;
-    top:-16;
-    right: 15;
+
+  .Android #latest img,
+  .Android #main-text img{
+  width: 110px;
+  height: auto;
+  top:-12;
+  right: -5;
   }
 
   .Android #latest-article{
@@ -238,6 +241,7 @@ header h1{
     padding-top:5px;
     padding-left: 0;
   }
+
   
   /*新着情報の記事*/
    #latest-article{
