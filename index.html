@@ -9,6 +9,22 @@
      <link rel="stylesheet" href="stylesheet2.min.css">
      <link rel="stylesheet" href="responsive2.css">
      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;700&display=swap" rel="stylesheet">
+      <script>
+     if (navigator.userAgent.indexOf('iPhone') > 0) {
+         let body = document.getElementsByTagName('body')[0];
+         body.classList.add('iPhone');
+     }
+
+     if (navigator.userAgent.indexOf('iPad') > 0) {
+         let body = document.getElementsByTagName('body')[0];
+         body.classList.add('iPad');
+     }
+
+     if (navigator.userAgent.indexOf('Android') > 0) {
+         let body = document.getElementsByTagName('body')[0];
+         body.classList.add('Android');
+     }
+     </script>
    </head>
 
 <body>
@@ -230,21 +246,5 @@
           </div>
         </div>
       </footer>
-   　<script>
-if (navigator.userAgent.indexOf('iPhone') > 0) {
-    let body = document.getElementsByTagName('body')[0];
-    body.classList.add('iPhone');
-}
- 
-if (navigator.userAgent.indexOf('iPad') > 0) {
-    let body = document.getElementsByTagName('body')[0];
-    body.classList.add('iPad');
-}
- 
-if (navigator.userAgent.indexOf('Android') > 0) {
-    let body = document.getElementsByTagName('body')[0];
-    body.classList.add('Android');
-}
-</script>
     </body>
   </html>
