@@ -210,6 +210,14 @@ header h1{
   right: 0!important;
 }
   
+  .Android #latest-article{
+  padding-top:10px!important;
+}
+
+.Android #text{
+  padding-top: 15px;
+}
+  
   /*新着情報の記事*/
    #latest-article{
      width:100%!important;
