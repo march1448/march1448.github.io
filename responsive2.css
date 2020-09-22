@@ -201,7 +201,7 @@ header h1{
 .Android #latest .title img{
   position:absolute;
   top:-14!important;
-  right: 15!important;
+  right: 0!important;
 }
 
 .Android #main-text .title img{
@@ -211,7 +211,7 @@ header h1{
 }
   
   .Android #latest-article{
-  padding-top:10px!important;
+  padding-top:15px!important;
 }
 
 .Android #text{
