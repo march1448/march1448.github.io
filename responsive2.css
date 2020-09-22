@@ -200,7 +200,7 @@ header h1{
   /*アンドロイド*/
   .Android #latest{
   display: flex;
-  padding-bottom: 60px;
+  padding-bottom: 35px;
 }
   .Android #latest .title{
     position:relative;
@@ -208,14 +208,14 @@ header h1{
   }
   .Android #latest .title h3{
     font-size: 1.6rem!important;
-    text-align: right!important;
-    padding-right: 15px!important;
-    position:relative!important;
+    text-align: right;
+    padding-right: 15px;
+    position:relative;
   }
   .Android #latest .title img{
-    position:absolute!important;
-    top:-15!important;
-    right: 15!important;
+    position:absolute;
+    top:-15;
+    right: 15;
   }
   
   /*新着情報の記事*/
