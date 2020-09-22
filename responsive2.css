@@ -201,27 +201,23 @@ header h1{
   .Android #latest{
   display: flex;
   padding-bottom: 60px;
-  }
-
+}
   .Android #latest .title{
     position:relative;
     width:26.56%;
   }
-
-   .Android #latest .title h3{
+  .Android #latest .title h3{
     font-size: 2.8rem;
     text-align: right;
     padding-right: 15px;
     position:relative;
   }
-  
   .Android #latest .title img{
     position:absolute;
     top:-15;
     right: 15;
   }
-
-
+  
   /*新着情報の記事*/
    #latest-article{
      width:100%!important;
