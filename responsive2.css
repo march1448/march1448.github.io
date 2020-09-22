@@ -198,34 +198,7 @@ header h1{
   
   
   /* アンドロイド用*/
-.Android #latest{
-  padding-bottom: 35px!important;
-}
 
-  .Android #latest img,
-  .Android #main-text img{
-  width: 110px!important;
-  height: auto!important;
-  top:-12!important;
-  right: -5!important;
-  }
-
-  .Android #latest-article{
-    padding:5px 0 0 10px!important;
-  }
-
-  .Android #main-text .title h3{
-    font-size: 1.6rem!important;
-    text-align: center!important;
-    padding:0 0 15px 0!important;
-  }
-
-  .Android #text{
-    padding-top:5px!important;
-    padding-left: 0!important;
-  }
-
-  
   /*新着情報の記事*/
    #latest-article{
      width:100%!important;
